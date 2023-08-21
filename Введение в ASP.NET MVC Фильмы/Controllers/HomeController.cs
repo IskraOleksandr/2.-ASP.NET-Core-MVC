@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using Введение_в_ASP.NET_MVC_Фильмы.Models;
+using System.Diagnostics; 
 
-namespace Введение_в_ASP.NET_MVC_Фильмы.Controllers
+namespace Films_MVC.Controllers
 {
     public class HomeController : Controller
     {
@@ -26,7 +25,7 @@ namespace Введение_в_ASP.NET_MVC_Фильмы.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new Film { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
