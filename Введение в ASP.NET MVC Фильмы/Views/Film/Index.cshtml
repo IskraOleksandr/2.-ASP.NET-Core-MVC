@@ -1,0 +1,24 @@
+﻿<div> 
+	@foreach (var fs in ViewBag.Films)
+	{
+							<div class="div2">
+						<h3 class="h3">@fs.Film_Name</h3> 
+					<div class="div3">
+						  <img src="@Url.Content(fs.poster)" width="250" />
+					  <h2 class="shadow">
+						Резиссер:
+							<p class="p1">@fs.Film_director</p> 
+					  </h2>
+					  <h2 class="shadow">
+						Жанр:
+							<p class="p2">@fs.Film_genre</p>
+					  </h2>
+					  <h2 class="shadow">
+						Год выпуска:
+							<p class="p3">@fs.Year_of_issue</p>
+					  </h2>
+						  <p class="shadow p4">@fs.Short_description</p>
+					</div>
+				  </div>
+	} 
+</div>

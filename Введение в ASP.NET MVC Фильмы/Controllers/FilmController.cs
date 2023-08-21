@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Films_MVC.Controllers
+namespace Films_MVC
 {
 
     public class FilmController : Controller

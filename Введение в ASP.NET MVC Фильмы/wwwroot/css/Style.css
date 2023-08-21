@@ -1,0 +1,94 @@
+﻿.div1 {
+    margin-bottom: 45px;
+}
+
+body,
+html {
+    height: max-content;
+}
+
+body {
+    background: linear-gradient( 122deg, rgba(172, 197, 227, 1) 0%, rgba(227, 231, 243, 1) 51%, rgb(243, 226, 231) 80%, rgba(145, 163, 209, 1) 99% ) no-repeat;
+}
+
+#h4 {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    border-radius: 5px;
+    margin: 30px auto 40px auto;
+    width: 450px;
+    text-align: center;
+    background-color: silver;
+    padding: 10px;
+    font-size: 42px;
+}
+
+.h3 {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    border-radius: 5px;
+    width: 450px;
+    text-align: center;
+    background-color: silver;
+    padding: 10px;
+    font-size: 22px;
+    margin: 10px auto 10px auto;
+}
+
+img {
+    box-shadow: 0 0 15px 3px rgb(0, 89, 255);
+    border-radius: 5px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    margin-left: 290px;
+}
+
+.p1 {
+    margin-left: 110px;
+    margin-top: -27px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.p2 {
+    margin-left: 80px;
+    margin-top: -27px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.p3 {
+    margin-left: 155px;
+    margin-top: -27px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.p4 {
+    margin-top: -5px;
+    margin-left: 280px;
+    width: 590px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+h2 {
+    margin-left: 15px;
+    width: 600px;
+}
+
+.div2 {
+    margin: 60px auto 10px auto;
+}
+
+.div3 {
+    margin: 5px auto 5px auto;
+    width: 905px;
+    height: auto;
+    padding-bottom: 20px;
+    border: solid 1px rgba(255, 0, 0, 0);
+}
