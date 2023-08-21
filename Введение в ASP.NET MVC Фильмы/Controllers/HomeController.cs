@@ -1,31 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics; 
+using System.Diagnostics;
 
 namespace Films_MVC.Controllers
 {
-    public class HomeController : Controller
+
+    public class FilmController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        FilmContext db;
+        public FilmController(FilmContext context)
         {
-            _logger = logger;
+            db = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new Film { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            IEnumerable<Film> films = await Task.Run(() => db.Films);
+            ViewBag.Films = films;
+            return View("Index");
         }
     }
+
 }
